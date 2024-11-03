@@ -1,0 +1,228 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english, russian]{babel}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm}
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Мотыгуллин Булат} \\ \vspace{1pt}
+    \small +79172841606 $|$ \href{bulatmot@gmail.com}{\underline{bulatmot@gmail.com}} $|$ 
+    \href{https://t.me/bulatttttttllllll}{\underline{t.me/bulatttttttllllll}} $|$
+    \href{https://github.com/bulat1337}{\underline{github.com/bulat1337}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Образование}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {МФТИ - Московский физико-технический университет}{Москва}
+    {Бакалавр ФРКТ - Физтех-школа радиотехники и комьютерных технологий}{2023 -- 2027 $|$ 2 курс}
+\resumeSubHeadingListEnd
+
+\vspace*{-3mm} % Уменьшение вертикального отступа между блоками
+
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Основные курсы:}{}
+    {Математический Анализ, Линейная Алгебра, Теория Вероятности, Информатика, Физика}{}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Проекты}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Tatlang} $|$ \emph{C, Make, Git, CPU emulator, Binary tree, Recursive descent parser}}
+          {\href{https://github.com/bulat1337/Tatlang}{\underline{github.com/bulat1337/Tatlang}}}
+          \resumeItemListStart
+            \resumeItem{Написал язык программирования. Синтаксис адаптирован под татарский язык и поддерживает все символы Unicode таблицы.}
+            \resumeItem{Разработал компилятор. Основные этапы работы: токенизация, формирование абстрактного синтаксического дерева (АСД) и ассемблирование.}
+            \resumeItem{Адаптировал процесс ассемблирования под эмулятор процессора.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Ray Tracing} $|$ \emph{C++, CMake, Git}}
+          {\href{https://github.com/bulat1337/Ray_Tracing}{\underline{github.com/bulat1337/Ray\_Tracing}}}
+          \resumeItemListStart
+            \resumeItem{Разработал движок трассировки лучей, который вручную рассчитывает путь каждого луча в 3D-сцене.}
+            \resumeItem{Реализовал механизмы сглаживания, глубины диффузии и эффекта размытия, что позволяет пользователям настраивать баланс между качеством изображения и производительностью.}
+            \resumeItem{Оптимизировал процесс рендеринга с помощью структуры BVH (Bounding Volume Hierarchy) для ускорения проверки пересечений лучей с объектами.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{CPU} $|$ \emph{C, Make, Git, Stack, SFML}}
+          {\href{https://github.com/bulat1337/CPU}{\underline{github.com/bulat1337/CPU}}}
+          \resumeItemListStart
+            \resumeItem{Эмулировал работу процессора. Основные этапы работы процессора: формирование байт-кода и его исполнение.}
+            
+            \resumeItem{Разработал язык ассемблера.}
+            
+            \resumeItem{Добавил поддержку арифметических операций, ввода и вывод данных. Реализовал работу с регистрами, стеком и оперативной памятью.}
+            
+            \resumeItem{Эмулировал видеопамять. Для формирования изображения использовал графическую библиотеку SFML.} 
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Differentiator} $|$ \emph{C, Binary tree, Recursive descent parser, Graphviz}}
+          {\href{https://github.com/bulat1337/Differentiator}{\underline{github.com/bulat1337/Differentiator}}}
+          \resumeItemListStart
+            \resumeItem{Разработал программу для дифференцирования и упрощения математических выражений.}
+            \resumeItem{Добавил генерацию описания процесса работы в формате Tex.}
+            \resumeItem{Выражения представлены в формате бинарного дерева. Для графического представления деревьев использовал Graphviz.}
+            \resumeItem{Реализовал анализ математических выражений с помощью алгоритма рекурсивного спуска.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Akinator} $|$ \emph{C, Make, Git, Binary Tree, Graphviz}}
+          {\href{https://github.com/bulat1337/Akinator}{\underline{github.com/bulat1337/Akinator}}}
+          \resumeItemListStart
+            \resumeItem{Написал игру, которая угадывает загаданный объект, задавая пользователю вопросы}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Range Queries} $|$ \emph{C++, CMake, Git, Red–black Tree, Graphviz}}
+          {\href{https://github.com/bulat1337/Range_Queries}{\underline{https://github.com/bulat1337/Range\_Queries}}}
+          \resumeItemListStart
+            \resumeItem{Создал интерактивную программу на основе своего черно-красного дерева, позволяющую добавлять узлы и запрашивать их количество в заданных границах.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Triangle Intersection} $|$ \emph{C++, CMake, Git, Spacial Hashing}}
+          {\href{https://github.com/bulat1337/Triangle_Intersection}{\underline{https://github.com/bulat1337/Triangle\_Intersection}}}
+          \resumeItemListStart
+            \resumeItem{Реализовал алгоритм, проверяющий пересечаение треугольников в трехмерном пространстве.}
+            \resumeItem{Оптимизировал алгоритм для обработки пересечений большого количества треугольников, применив пространственное хеширование (Spatial Hashing).}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Adaptive Replacement Cache} $|$ \emph{C++, CMake, Git}}
+          {\href{https://github.com/bulat1337/ARC}{\underline{https://github.com/bulat1337/ARC}}}
+          \resumeItemListStart
+            \resumeItem{Реализовал адаптивное кеширование данных}
+            \resumeItem{Написал "идеальный" алгоритм кеширования, для сравнения реазультатов.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------О СЕБЕ-----------
+\section{О себе}
+
+\hspace{1cm}Учась в школе, я участвовал в олимпиадах по физике, стал призёром в:
+\vspace*{-1.5mm}
+    \resumeItemListStart
+        \resumeItem{Инженерная олимпиады школьников (физика) - призёр}
+\vspace*{-2.5mm}
+        \resumeItem{Олимпиада Курчатов физика - призёр}
+    \resumeItemListEnd
+    
+\newline
+
+\vspace*{+1mm}
+
+\hspace{1cm}На физтехе я получил навык работы в команде, научился грамотному техническому общению. Опыт мозгового штурма и совместного решения сложных задач поможет мне работать в профессиональной команде, прислушиваться к каждому и
+эффективно находить лучшее решение проблемы. 
+
+
+
+%-------------------------------------------
+\end{document}
